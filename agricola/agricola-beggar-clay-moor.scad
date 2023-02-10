@@ -14,7 +14,7 @@ g_b_visualization = false;
         
 // this is the outer wall thickness. 
 //Default = 1.5mm
-g_wall_thickness = 1.5;
+g_wall_thickness = 1.0;
 
 // The tolerance value is extra space put between planes of the lid and box that fit together.
 // Increase the tolerance to loosen the fit and decrease it to tighten it.
@@ -64,35 +64,6 @@ data =
             [ CMP_CUTOUT_DEPTH_PCT, 0 ],
           ]
         ],
-        /*
-        // moor tiles
-        [
-          BOX_COMPONENT,
-          [
-            [CMP_COMPARTMENT_SIZE_XYZ, [71.8, 48.2, 58.4]],
-            [CMP_NUM_COMPARTMENTS_XY, [1, 1]],
-            [POSITION_XY, [CENTER, 0]]
-          ]
-        ],
-        // clay/stone room tiles
-        [
-          BOX_COMPONENT,
-          [
-            [CMP_COMPARTMENT_SIZE_XYZ, [71.8, 100, 58.4]],
-            [CMP_NUM_COMPARTMENTS_XY, [1, 1]],
-            [POSITION_XY, [CENTER, MAX]]
-          ]
-        ],
-        // beggar -3 tiles
-        [
-          BOX_COMPONENT,
-          [
-            [CMP_COMPARTMENT_SIZE_XYZ, [71.8, 100, 58.4]],
-            [CMP_NUM_COMPARTMENTS_XY, [1, 1]],
-            [POSITION_XY, [CENTER, MAX]]
-          ]
-        ],
-        */
       ]
     ]
   ];

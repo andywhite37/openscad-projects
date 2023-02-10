@@ -14,7 +14,7 @@ g_b_visualization = false;
         
 // this is the outer wall thickness. 
 //Default = 1.5mm
-g_wall_thickness = 1.5;
+g_wall_thickness = 1.0;
 
 // The tolerance value is extra space put between planes of the lid and box that fit together.
 // Increase the tolerance to loosen the fit and decrease it to tighten it.
@@ -50,6 +50,7 @@ aw_size_x =
   aw_fotm_cards_size + // 42
   aw_wall_thickness + // 1
   aw_parent_exp_cards_size + // 8
+
   aw_wall_thickness; // 1
 
 aw_size_y = 95.0;
@@ -140,7 +141,7 @@ data =
               ]
             ]
           ]
-        ],
+        ]
       ]
     ]
   ];
