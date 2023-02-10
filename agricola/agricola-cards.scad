@@ -32,7 +32,6 @@ g_tolerance = 0.15;
 // The larger the value, the bigger the gap between the lid and the box.
 g_tolerance_detents_pos = 0.1;
 
-aw_wall_thickness = 1.0;
 aw_size_x = 268.0;
 aw_size_y = 95.0;
 aw_size_z = 70.0;
@@ -62,8 +61,8 @@ data =
               CMP_COMPARTMENT_SIZE_XYZ,
               [
                 aw_action_major_cards_size,
-                aw_size_y - 2 * aw_wall_thickness,
-                aw_size_z - aw_wall_thickness
+                aw_size_y - 2 * g_wall_thickness,
+                aw_size_z - g_wall_thickness
               ]
             ],
             [ CMP_CUTOUT_SIDES_4B, [ f, f, t, t ] ],
@@ -81,11 +80,11 @@ data =
               CMP_COMPARTMENT_SIZE_XYZ,
               [
                 aw_a_cards_size,
-                aw_size_y - 2 * aw_wall_thickness,
-                aw_size_z - aw_wall_thickness
+                aw_size_y - 2 * g_wall_thickness,
+                aw_size_z - g_wall_thickness
               ]
             ],
-            [ CMP_CUTOUT_SIDES_4B, [ f, f, t, t ] ],
+            [ CMP_CUTOUT_SIDES_4B, [ t, t, t, t ] ],
             [ CMP_CUTOUT_HEIGHT_PCT, aw_cutout_height_pct ],
             [ CMP_CUTOUT_DEPTH_PCT, 0 ],
             [CMP_NUM_COMPARTMENTS_XY, [4, 1]],
@@ -93,7 +92,7 @@ data =
               POSITION_XY,
               [
                 aw_action_major_cards_size +
-                aw_wall_thickness,
+                g_wall_thickness,
                 CENTER
               ]
             ]
@@ -107,11 +106,11 @@ data =
               CMP_COMPARTMENT_SIZE_XYZ,
               [
                 aw_fotm_cards_size,
-                aw_size_y - 2 * aw_wall_thickness,
-                aw_size_z - aw_wall_thickness
+                aw_size_y - 2 * g_wall_thickness,
+                aw_size_z - g_wall_thickness
               ]
             ],
-            [ CMP_CUTOUT_SIDES_4B, [ f, f, t, t ] ],
+            [ CMP_CUTOUT_SIDES_4B, [ t, t, t, t ] ],
             [ CMP_CUTOUT_HEIGHT_PCT, aw_cutout_height_pct ],
             [ CMP_CUTOUT_DEPTH_PCT, 0 ],
             [CMP_NUM_COMPARTMENTS_XY, [1, 1]],
@@ -119,8 +118,8 @@ data =
               POSITION_XY,
               [
                 aw_action_major_cards_size +
-                aw_wall_thickness +
-                4 * (aw_a_cards_size + aw_wall_thickness),
+                g_wall_thickness +
+                4 * (aw_a_cards_size + g_wall_thickness),
                 CENTER
               ]
             ]
@@ -134,8 +133,8 @@ data =
               CMP_COMPARTMENT_SIZE_XYZ,
               [
                 aw_parent_exp_cards_size,
-                aw_size_y - 2 * aw_wall_thickness,
-                aw_size_z - aw_wall_thickness
+                aw_size_y - 2 * g_wall_thickness,
+                aw_size_z - g_wall_thickness
               ]
             ],
             [ CMP_CUTOUT_SIDES_4B, [ f, f, t, t ] ],
@@ -146,10 +145,10 @@ data =
               POSITION_XY,
               [
                 aw_action_major_cards_size +
-                aw_wall_thickness +
-                4 * (aw_a_cards_size + aw_wall_thickness) +
+                g_wall_thickness +
+                4 * (aw_a_cards_size + g_wall_thickness) +
                 aw_fotm_cards_size +
-                aw_wall_thickness,
+                g_wall_thickness,
                 CENTER
               ]
             ]
