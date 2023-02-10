@@ -34,7 +34,7 @@ g_tolerance_detents_pos = 0.1;
 
 aw_size_x = 123.0;
 aw_size_y = 24.0;
-aw_size_z = 30.0;
+aw_size_z = 35.0;
 
 
 data =
