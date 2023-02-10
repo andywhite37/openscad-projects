@@ -32,10 +32,12 @@ g_tolerance = 0.15;
 // The larger the value, the bigger the gap between the lid and the box.
 g_tolerance_detents_pos = 0.1;
 
-aw_size_x = 123.0;
-aw_size_y = 24.0;
-aw_size_z = 30.0;
+aw_size_x = 125.0; // 220.0 - 95.0;
+aw_size_y = 40.0;
+aw_size_z = 40.0;
 
+aw_field_tiles_size_x = 75.0;
+aw_tokens_size_x = 47.0;
 
 data =
   [
@@ -44,21 +46,55 @@ data =
       [
         [ BOX_SIZE_XYZ, [aw_size_x, aw_size_y, aw_size_z] ],
         [ BOX_NO_LID_B, t],
+        // Field tiles
         [
           BOX_COMPONENT,
           [
             [
               CMP_COMPARTMENT_SIZE_XYZ,
               [
-                aw_size_x - 2 * g_wall_thickness,
+                aw_field_tiles_size_x,
                 aw_size_y - 2 * g_wall_thickness,
                 aw_size_z - g_wall_thickness
               ]
             ],
-            //[ CMP_CUTOUT_SIDES_4B, [ f, f, t, t ] ],
-            //[ CMP_CUTOUT_HEIGHT_PCT, 60 ],
-            //[ CMP_CUTOUT_DEPTH_PCT, 0 ],
-            //[ CMP_CUTOUT_WIDTH_PCT, 50 ],
+            [ CMP_CUTOUT_SIDES_4B, [ t, t, t, f ] ],
+            [ CMP_CUTOUT_HEIGHT_PCT, 60 ],
+            [ CMP_CUTOUT_DEPTH_PCT, 0 ],
+            [ CMP_NUM_COMPARTMENTS_XY, [1, 1] ],
+            [
+              POSITION_XY,
+              [
+                0,
+                CENTER
+              ]
+            ]
+          ]
+        ],
+        // Token box
+        [
+          BOX_COMPONENT,
+          [
+            [
+              CMP_COMPARTMENT_SIZE_XYZ,
+              [
+                aw_tokens_size_x,
+                aw_size_y - 2 * g_wall_thickness,
+                aw_size_z - g_wall_thickness
+              ]
+            ],
+            [ CMP_CUTOUT_SIDES_4B, [ f, f, f, f ] ],
+            [ CMP_CUTOUT_HEIGHT_PCT, 60 ],
+            [ CMP_CUTOUT_DEPTH_PCT, 0 ],
+            [ CMP_NUM_COMPARTMENTS_XY, [1, 1] ],
+            [
+              POSITION_XY,
+              [
+                aw_field_tiles_size_x +
+                g_wall_thickness,
+                CENTER
+              ]
+            ]
           ]
         ],
       ]

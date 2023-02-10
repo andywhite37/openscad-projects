@@ -77,7 +77,7 @@ data =
                 aw_size_z - aw_wall_thickness
               ]
             ],
-            [ CMP_CUTOUT_SIDES_4B, [ f, f, t, t ] ],
+            [ CMP_CUTOUT_SIDES_4B, [ t, t, t, t ] ],
             [ CMP_CUTOUT_HEIGHT_PCT, aw_cutout_height_pct ],
             [ CMP_CUTOUT_DEPTH_PCT, 0 ],
             [CMP_NUM_COMPARTMENTS_XY, [2, 1]],
@@ -102,7 +102,7 @@ data =
                 aw_size_z - aw_wall_thickness
               ]
             ],
-            [ CMP_CUTOUT_SIDES_4B, [ f, f, t, t ] ],
+            [ CMP_CUTOUT_SIDES_4B, [ t, t, t, t ] ],
             [ CMP_CUTOUT_HEIGHT_PCT, aw_cutout_height_pct ],
             [ CMP_CUTOUT_DEPTH_PCT, 0 ],
             [CMP_NUM_COMPARTMENTS_XY, [1, 1]],
