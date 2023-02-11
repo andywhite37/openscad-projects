@@ -32,12 +32,12 @@ g_tolerance = 0.15;
 // The larger the value, the bigger the gap between the lid and the box.
 g_tolerance_detents_pos = 0.1;
 
-aw_size_x = 125.0; // 220.0 - 95.0;
+aw_size_x = 123.0; // 218.0 - 95.0;
 aw_size_y = 40.0;
 aw_size_z = 40.0;
 
 aw_field_tiles_size_x = 75.0;
-aw_tokens_size_x = 47.0;
+aw_tokens_size_x = 45.0;
 
 data =
   [
