@@ -32,9 +32,9 @@ g_tolerance = 0.15;
 // The larger the value, the bigger the gap between the lid and the box.
 g_tolerance_detents_pos = 0.1;
 
-aw_size_x = 178.0; // 180.0; // 308.0 - 40.0 - 40.0 - 24.0 - 24.0;
+aw_size_x = 154.0; // 180.0; // 308.0 - 40.0 - 40.0 - 24.0 - 24.0 - 24.0 = 156 (minus two for division by 3) = 156;
 aw_size_y = 123.0;
-aw_size_z = 45.0;
+aw_size_z = 40.0;
 
 
 data =
@@ -50,7 +50,7 @@ data =
             [
               CMP_COMPARTMENT_SIZE_XYZ,
               [
-                58, // (aw_size_x - 1.0 - 1.0 - 1.0 - 1.0) / 3.0,
+                50, // (aw_size_x - 1.0 - 1.0 - 1.0 - 1.0) / 3.0,
                 60, // (aw_size_y - 1.0 - 1.0 - 1.0) / 2,
                 aw_size_z - g_wall_thickness
               ]
