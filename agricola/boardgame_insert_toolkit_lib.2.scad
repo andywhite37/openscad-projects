@@ -220,7 +220,7 @@ g_tolerance_detent_pos = 0.1;
 //
 g_print_mmu_layer = "default"; // [ "default" | "mmu_box_layer" | "mmu_label_layer" ]
 
-
+g_full_bottom_cutout = false;
 
 m_tab_corner_gap = 4;
 m_wall_underside_lid_storage_depth = 7;
@@ -1189,7 +1189,8 @@ module MakeBox( box )
 
                 InEachCompartment( )
                 {
-                    frac = 0.8;
+                    // AW: modified this for a special use case for agricola-beds.scad
+                    frac = g_full_bottom_cutout ? 1.0 : 0.8;
 
                     // this is the finger cutout underneath
                     if ( m_actually_cutout_the_bottom )
