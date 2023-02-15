@@ -40,7 +40,7 @@ aw_size_y1 = 40.0;
 aw_size_y2 = 40.0;
 aw_size_y3 = 80.0;
 
-aw_size_z = 30.0;
+aw_size_z = 5.0; //30.0;
 
 // hack to make the bottom cutout take away the whole portion of the 3rd compartment
 g_full_bottom_cutout = true;
