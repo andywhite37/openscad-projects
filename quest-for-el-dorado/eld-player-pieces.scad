@@ -46,16 +46,33 @@ data =
         [
           BOX_COMPONENT,
           [
+            [ CMP_SHAPE, FILLET ],
             [ CMP_NUM_COMPARTMENTS_XY, [1, 1] ],
             [
               CMP_COMPARTMENT_SIZE_XYZ,
               [
                 aw_box_x - 2 * g_wall_thickness,
-                aw_box_y - 2 * g_wall_thickness,
+                60.0, //aw_box_y - 2 * g_wall_thickness,
                 aw_box_z - 1 * g_wall_thickness
               ]
             ],
-            [ POSITION_XY, [ CENTER, CENTER ] ],
+            [ POSITION_XY, [ CENTER, 0 ] ],
+          ]
+        ],
+        [
+          BOX_COMPONENT,
+          [
+            [ CMP_SHAPE, FILLET ],
+            [ CMP_NUM_COMPARTMENTS_XY, [1, 1] ],
+            [
+              CMP_COMPARTMENT_SIZE_XYZ,
+              [
+                aw_box_x - 2 * g_wall_thickness,
+                25.0, //aw_box_y - 2 * g_wall_thickness,
+                (aw_box_z - 20) - 1 * g_wall_thickness
+              ]
+            ],
+            [ POSITION_XY, [ CENTER, 61.5 ] ],
           ]
         ],
       ]
