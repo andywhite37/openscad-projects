@@ -6,17 +6,6 @@ Organizer for:
 - The Quest for El Dorado - Heroes and Hexes (Ravensburger)
 - The Quest for El Dorado - The Golden Temples (Ravensburger)
 
-# Remix
-
-- Remixing some designs from Stinkfoot71's design
-    - https://www.thingiverse.com/thing:3529494
-    - Using Quest_for_El_Dorado_-_Hex_Tiles.stl unchanged (renamed to eld-hex.stl)
-
-- Which is a remix of 1Peter567's design
-    - https://www.thingiverse.com/thing:3453404
-    - https://www.cgtrader.com/3d-print-models/games-toys/board-games/quest-for-el-dorado-board-game-organizer
-    - (Not using any parts from this directly - just referencing)
-
 # Notes
 
 Changed Cura printer bed size from 235x235 to 245x255
@@ -66,7 +55,13 @@ Largest tile size 40 x 35
 40 hh caves
 50 curses
 
+Large hex is 216 wide
+
+Box width = 284 - 216 - 24 = 44
+Box length = 284 - 88
+
 # Player boards
 
-Stack is 25mm tall and full box width
-Width of board is 40mm
+Stack is 24 tall
+
+Width of board is 40 (height on its side)
