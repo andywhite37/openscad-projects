@@ -1193,7 +1193,7 @@ module MakeBox( box )
 
                     // this is the finger cutout underneath
                     if ( m_actually_cutout_the_bottom )
-                        translate( [ (__compartment_size( k_x) * (1-frac))/2, (__compartment_size( k_y) * (1-frac))/2, -m_wall_thickness ])
+                        translate( [ (__compartment_size( k_x) * (1-frac))/2, (__compartment_size( k_y) * (1-frac))/2, -1.01 * m_wall_thickness ])
                             scale( v = [ frac, frac, 1 ]) // bring in the sides
                                 MakeCompartmentShape();
                 }

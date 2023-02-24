@@ -43,14 +43,6 @@ data =
       [
         [ BOX_SIZE_XYZ, [aw_x, aw_y, aw_z] ],
         [ BOX_NO_LID_B, t],
-        /*
-        [
-          BOX_LID,
-          [
-            [ LID_SOLID_B, t],
-          ]
-        ],
-        */
         [
           BOX_COMPONENT,
           [
@@ -67,11 +59,11 @@ data =
             //[ CMP_SHAPE_VERTICAL_B, t ],
             [ POSITION_XY, [ CENTER, CENTER ] ],
             [ CMP_CUTOUT_SIDES_4B, [ t, t, t, t ] ],
-            [ CMP_CUTOUT_DEPTH_PCT, 10 ],
-            [ CMP_CUTOUT_WIDTH_PCT, 30 ],
-            [ CMP_CUTOUT_HEIGHT_PCT, 100 ],
+            [ CMP_CUTOUT_DEPTH_PCT, 0 ],
+            [ CMP_CUTOUT_WIDTH_PCT, 80 ],
+            [ CMP_CUTOUT_HEIGHT_PCT, 60 ],
             //[ CMP_CUTOUT_TYPE, BOTH ], // BOTH, INTERIOR, EXTERIOR
-            //[ CMP_CUTOUT_BOTTOM_B, t ], // BOTH, INTERIOR, EXTERIOR
+            [ CMP_CUTOUT_BOTTOM_B, t ], // BOTH, INTERIOR, EXTERIOR
             //[ CMP_CUTOUT_CORNERS_4B, [ t, t, t, t ] ],
             //[CMP_SHEAR,                     [0,45]],
           ]

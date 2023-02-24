@@ -19,6 +19,8 @@ Organizer for:
 
 # Notes
 
+Changed Cura printer bed size from 235x235 to 245x255
+
 All sizes in mm
 
 Box inner dimensions
