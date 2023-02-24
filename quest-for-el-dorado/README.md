@@ -28,3 +28,27 @@ Box inner dimensions
 
 Hex tile box dimensions
 210 x 224 x 66
+
+Card dimensions
+68 x 44
+
+Base player cards
+10
+
+Base expedition cards
+16
+
+H&H demon cards
+5
+
+H&H expedition cards
+8
+
+Temples player cards
+10
+
+Temples expedition cards
+16
+
+Extra German cards
+24
