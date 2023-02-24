@@ -14,7 +14,7 @@ g_b_visualization = false;
         
 // this is the outer wall thickness. 
 //Default = 1.5mm
-g_wall_thickness = 1.4;
+g_wall_thickness = 1.5;
 
 // The tolerance value is extra space put between planes of the lid and box that fit together.
 // Increase the tolerance to loosen the fit and decrease it to tighten it.
@@ -32,30 +32,43 @@ g_tolerance = 0.15;
 // The larger the value, the bigger the gap between the lid and the box.
 g_tolerance_detents_pos = 0.1;
 
-aw_box_x = 88.0; // 74.0;
-aw_box_y = 90.0; // 284.0 -170.0 - 24.0;
+aw_box_x = 196.0; 
+aw_box_y = 44.0;
 aw_box_z = 66.0;
+
+//aw_padding = 0.0;
+//aw_cave_width = 35.0 + aw_padding;
+//aw_curse_width = 25.0 + aw_padding;
+//aw_coin_width = 40.0 + aw_padding;
+//aw_guardian_width = 30.0 + aw_padding;
+
+aw_container_width = 37.8; //(196.0 - 6 * g_wall_thickness) / 5;
 
 data =
   [
     [
-      "hex tile box",
+      "small tiles",
       [
         [ BOX_SIZE_XYZ, [aw_box_x, aw_box_y, aw_box_z] ],
         [ BOX_NO_LID_B, t],
+
         [
           BOX_COMPONENT,
           [
-            [ CMP_NUM_COMPARTMENTS_XY, [1, 1] ],
+            [ CMP_NUM_COMPARTMENTS_XY, [5, 1] ],
             [
               CMP_COMPARTMENT_SIZE_XYZ,
               [
-                aw_box_x - 2 * g_wall_thickness,
+                aw_container_width,
                 aw_box_y - 2 * g_wall_thickness,
                 aw_box_z - 1 * g_wall_thickness
               ]
             ],
-            [ POSITION_XY, [ CENTER, CENTER ] ],
+            [ POSITION_XY, [ 0, CENTER ] ],
+            [ CMP_CUTOUT_SIDES_4B, [ t, f, f, f ] ],
+            [ CMP_CUTOUT_DEPTH_PCT, 20 ],
+            [ CMP_CUTOUT_WIDTH_PCT, 50 ],
+            [ CMP_CUTOUT_HEIGHT_PCT, 100 ],
           ]
         ],
       ]
