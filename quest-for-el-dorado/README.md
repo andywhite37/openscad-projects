@@ -29,6 +29,8 @@ Box inner dimensions
 Hex tile box dimensions
 210 x 224 x 66
 
+# Cards
+
 Card dimensions
 68 x 44
 
@@ -52,3 +54,19 @@ Temples expedition cards
 
 Extra German cards
 24
+
+# Small tiles
+
+Largest tile size 40 x 35
+
+20 guardians
+30 coins
+40 base caves
+40 base caves
+40 hh caves
+50 curses
+
+# Player boards
+
+Stack is 25mm tall and full box width
+Width of board is 40mm

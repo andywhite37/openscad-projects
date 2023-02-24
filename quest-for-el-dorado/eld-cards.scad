@@ -45,7 +45,7 @@ aw_temples_player_cards_size = 10 * aw_sleeve_factor;
 aw_temples_exp_cards_size = 16 * aw_sleeve_factor;
 aw_german_cards_size = 24 + 4;
 
-aw_box_x = 74.0;
+aw_box_x = 88.0; // 74.0;
 
 // 8 * 1.5 + 20 + 32 + 10 + 16 + 20 + 32 + 28 = 170
 aw_box_y =
@@ -66,6 +66,9 @@ aw_box_y =
   g_wall_thickness;
 
 aw_box_z = 66.0;
+
+aw_cutout_width_pct = 50;
+aw_cutout_height_pct = 60;
 
 data =
   [
@@ -90,8 +93,8 @@ data =
             [ POSITION_XY, [ CENTER, 0 ] ],
             [ CMP_CUTOUT_SIDES_4B, [ t, f, f, f ] ],
             [ CMP_CUTOUT_DEPTH_PCT, 0 ],
-            [ CMP_CUTOUT_WIDTH_PCT, 60 ],
-            [ CMP_CUTOUT_HEIGHT_PCT, 60 ],
+            [ CMP_CUTOUT_WIDTH_PCT, aw_cutout_width_pct ],
+            [ CMP_CUTOUT_HEIGHT_PCT, aw_cutout_height_pct ],
           ]
         ],
         // Base exp
@@ -116,8 +119,8 @@ data =
             ],
             [ CMP_CUTOUT_SIDES_4B, [ t, f, f, f ] ],
             [ CMP_CUTOUT_DEPTH_PCT, 0 ],
-            [ CMP_CUTOUT_WIDTH_PCT, 60 ],
-            [ CMP_CUTOUT_HEIGHT_PCT, 60 ],
+            [ CMP_CUTOUT_WIDTH_PCT, aw_cutout_width_pct ],
+            [ CMP_CUTOUT_HEIGHT_PCT, aw_cutout_height_pct ],
           ]
         ],                            
         // H&H demon
@@ -144,8 +147,8 @@ data =
             ],
             [ CMP_CUTOUT_SIDES_4B, [ t, f, f, f ] ],
             [ CMP_CUTOUT_DEPTH_PCT, 0 ],
-            [ CMP_CUTOUT_WIDTH_PCT, 60 ],
-            [ CMP_CUTOUT_HEIGHT_PCT, 60 ],
+            [ CMP_CUTOUT_WIDTH_PCT, aw_cutout_width_pct ],
+            [ CMP_CUTOUT_HEIGHT_PCT, aw_cutout_height_pct ],
           ]
         ],                            
         // H&H exp
@@ -174,8 +177,8 @@ data =
             ],
             [ CMP_CUTOUT_SIDES_4B, [ t, f, f, f ] ],
             [ CMP_CUTOUT_DEPTH_PCT, 0 ],
-            [ CMP_CUTOUT_WIDTH_PCT, 60 ],
-            [ CMP_CUTOUT_HEIGHT_PCT, 60 ],
+            [ CMP_CUTOUT_WIDTH_PCT, aw_cutout_width_pct ],
+            [ CMP_CUTOUT_HEIGHT_PCT, aw_cutout_height_pct ],
           ]
         ],                            
         // Temples player
@@ -206,8 +209,8 @@ data =
             ],
             [ CMP_CUTOUT_SIDES_4B, [ t, f, f, f ] ],
             [ CMP_CUTOUT_DEPTH_PCT, 0 ],
-            [ CMP_CUTOUT_WIDTH_PCT, 60 ],
-            [ CMP_CUTOUT_HEIGHT_PCT, 60 ],
+            [ CMP_CUTOUT_WIDTH_PCT, aw_cutout_width_pct ],
+            [ CMP_CUTOUT_HEIGHT_PCT, aw_cutout_height_pct ],
           ]
         ],                            
         // Temples exp
@@ -240,8 +243,8 @@ data =
             ],
             [ CMP_CUTOUT_SIDES_4B, [ t, f, f, f ] ],
             [ CMP_CUTOUT_DEPTH_PCT, 0 ],
-            [ CMP_CUTOUT_WIDTH_PCT, 60 ],
-            [ CMP_CUTOUT_HEIGHT_PCT, 60 ],
+            [ CMP_CUTOUT_WIDTH_PCT, aw_cutout_width_pct ],
+            [ CMP_CUTOUT_HEIGHT_PCT, aw_cutout_height_pct ],
           ]
         ],                            
         // Extra/German cards
@@ -276,8 +279,8 @@ data =
             ],
             [ CMP_CUTOUT_SIDES_4B, [ t, f, f, f ] ],
             [ CMP_CUTOUT_DEPTH_PCT, 0 ],
-            [ CMP_CUTOUT_WIDTH_PCT, 60 ],
-            [ CMP_CUTOUT_HEIGHT_PCT, 60 ],
+            [ CMP_CUTOUT_WIDTH_PCT, aw_cutout_width_pct ],
+            [ CMP_CUTOUT_HEIGHT_PCT, aw_cutout_height_pct ],
           ]
         ],                            
       ]
