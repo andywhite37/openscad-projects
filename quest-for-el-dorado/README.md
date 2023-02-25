@@ -58,7 +58,7 @@ Largest tile size 40 x 35
 Large hex is 216 wide
 
 Box width = 284 - 216 - 24 = 44
-Box length = 284 - 88
+Box length = 284 - 88 = 196
 
 # Player boards
 

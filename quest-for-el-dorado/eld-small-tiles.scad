@@ -66,7 +66,7 @@ data =
             ],
             [ POSITION_XY, [ 0, CENTER ] ],
             [ CMP_CUTOUT_SIDES_4B, [ t, f, f, f ] ],
-            [ CMP_CUTOUT_DEPTH_PCT, 20 ],
+            [ CMP_CUTOUT_DEPTH_PCT, 40 ],
             [ CMP_CUTOUT_WIDTH_PCT, 50 ],
             [ CMP_CUTOUT_HEIGHT_PCT, 100 ],
           ]
