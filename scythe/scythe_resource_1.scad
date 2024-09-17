@@ -50,14 +50,14 @@ data =
             [
               CMP_COMPARTMENT_SIZE_XYZ,
               [
-                (aw_size_x - 1.0 - 1.0 - 1.0) / 2.0,
-                (aw_size_y - 1.0 - 1.0 - 1.0 - 1.0) / 3.0,
+                (aw_size_x - 1.0 - 1.0),
+                (aw_size_y - 1.0 - 1.0 - 1.0 - 1.0 - 1.0) / 4.0,
                 aw_size_z - g_wall_thickness
               ]
             ],
-            [ CMP_NUM_COMPARTMENTS_XY, [2, 3] ],
+            [ CMP_NUM_COMPARTMENTS_XY, [1, 4] ],
             [ CMP_SHAPE, FILLET ],
-            [ CMP_FILLET_RADIUS, 5.0 ],
+            [ CMP_FILLET_RADIUS, 15.0 ],
             [ POSITION_XY, [0, CENTER] ],
           ]
         ],
