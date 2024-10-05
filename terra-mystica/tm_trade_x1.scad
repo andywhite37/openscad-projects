@@ -33,7 +33,7 @@ g_tolerance = 0.15;
 g_tolerance_detents_pos = 0.1;
 
 aw_size_x = 210.0;
-aw_size_y = 126.0;
+aw_size_y = 70.0;
 aw_size_z = 20.0;
 
 
@@ -50,21 +50,21 @@ data =
             [
               CMP_COMPARTMENT_SIZE_XYZ,
               [
-                (aw_size_x - 3.0) / 2.0,
-                (aw_size_y - 3.0) / 2.0,
+                (aw_size_x - 8.0) / 7,
+                (aw_size_y - 1.0 - 1.0),
                 aw_size_z - g_wall_thickness
               ]
             ],
-            [ CMP_NUM_COMPARTMENTS_XY, [2, 2] ],
+            [ CMP_NUM_COMPARTMENTS_XY, [7, 1] ],
             //[ CMP_FILLET_RADIUS, 5.0 ],
             [ POSITION_XY, [0, 0] ],
-            //[ CMP_CUTOUT_SIDES_4B,   [f,f,f,f]],
+            [ CMP_CUTOUT_SIDES_4B,   [t,f,f,f]],
             //[ CMP_CUTOUT_DEPTH_PCT,  20],
             //[ CMP_CUTOUT_WIDTH_PCT,  50],
             //[ CMP_CUTOUT_HEIGHT_PCT, 100], 
             //[ CMP_SHAPE_ROTATED_B, t ],
-            [ CMP_SHAPE, FILLET ],
-            [ CMP_FILLET_RADIUS, 10.0 ],
+            //[ CMP_SHAPE, FILLET ],
+            //[ CMP_FILLET_RADIUS, 5.0 ],
           ]
         ],
       ]
