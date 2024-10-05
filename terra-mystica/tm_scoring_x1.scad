@@ -75,9 +75,29 @@ data =
                 aw_size_z - g_wall_thickness
               ]
             ],
-            [ CMP_NUM_COMPARTMENTS_XY, [2, 3] ],
+            [ CMP_NUM_COMPARTMENTS_XY, [1, 3] ],
             //[ CMP_FILLET_RADIUS, 5.0 ],
             [ POSITION_XY, [94, 0] ],
+            [ CMP_CUTOUT_SIDES_4B,   [f,f,t,t]],
+            //[ CMP_CUTOUT_DEPTH_PCT,  20],
+            //[ CMP_CUTOUT_WIDTH_PCT,  50],
+            //[ CMP_CUTOUT_HEIGHT_PCT, 100], 
+          ]
+        ],
+        [
+          BOX_COMPONENT,
+          [
+            [
+              CMP_COMPARTMENT_SIZE_XYZ,
+              [
+                56.3,
+                (aw_size_y - 4.0) / 3,
+                aw_size_z - g_wall_thickness
+              ]
+            ],
+            [ CMP_NUM_COMPARTMENTS_XY, [1, 3] ],
+            //[ CMP_FILLET_RADIUS, 5.0 ],
+            [ POSITION_XY, [151.5, 0] ],
             [ CMP_CUTOUT_SIDES_4B,   [f,f,t,t]],
             //[ CMP_CUTOUT_DEPTH_PCT,  20],
             //[ CMP_CUTOUT_WIDTH_PCT,  50],
